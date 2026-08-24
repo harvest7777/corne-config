@@ -79,10 +79,10 @@
 
             display-name = "Base";
             bindings = <
-&trans  &kp Q                 &kp W  &kp E  &kp R     &kp T    &kp Y      &kp_tap LGUI U  &kp_tap LALT I  &kp_tap LCTRL O  &kp P           &trans
-&trans  &kp_tap LEFT_SHIFT A  &kp S  &kp D  &kp F     &kp G    &kp H      &kp J           &kp K           &kp L            &kp LEFT_SHIFT  &trans
-&trans  &kp Z                 &kp X  &kp C  &kp V     &kp B    &kp N      &kp M           &kp COMMA       &kp PERIOD       &kp FSLH        &trans
-                                     &mo 2  &kp LGUI  &mo 1    &kp SPACE  &kp RIGHT_ALT   &trans
+&trans          &kp Q  &kp W  &kp E  &kp R     &kp T    &kp Y      &kp_tap LGUI U  &kp_tap LALT I  &kp_tap LCTRL O  &kp P          &trans
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F     &kp G    &kp H      &kp J           &kp K           &kp L            &kp SEMICOLON  &kp ENTER
+&trans          &kp Z  &kp X  &kp C  &kp V     &kp B    &kp N      &kp M           &kp COMMA       &kp PERIOD       &kp FSLH       &trans
+                              &mo 2  &kp LGUI  &mo 1    &kp SPACE  &kp RIGHT_ALT   &trans
             >;
         };
 
@@ -97,10 +97,10 @@
 
         math {
             bindings = <
-&trans  &kp N1     &kp N2         &kp N3         &kp N4            &kp N5           &kp N6           &kp N7           &kp N8          &kp N9         &kp N0         &trans
-&trans  &kp TILDE  &kp BACKSLASH  &kp PIPE       &kp CARET         &kp AMPERSAND    &kp KP_ASTERISK  &kp KP_PLUS      &kp KP_EQUAL    &kp BACKSPACE  &kp SEMICOLON  &trans
-&trans  &trans     &trans         &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE        &kp KP_SLASH     &kp KP_MINUS     &kp UNDERSCORE  &trans         &trans         &trans
-                                  &trans         &trans            &trans           &kp LGUI         &mohold 3 SPACE  &kp LEFT_SHIFT
+&trans  &kp N1     &kp N2            &kp N3         &kp N4            &kp N5           &kp N6           &kp N7           &kp N8          &kp N9          &kp N0         &trans
+&trans  &kp TILDE  &kp BACKSLASH     &kp PIPE       &kp CARET         &kp AMPERSAND    &kp KP_ASTERISK  &kp KP_PLUS      &kp KP_EQUAL    &kp BACKSPACE   &kp SEMICOLON  &trans
+&trans  &trans     &kp LEFT_COMMAND  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE        &kp KP_SLASH     &kp KP_MINUS     &kp COMMA       &kp UNDERSCORE  &trans         &trans
+                                     &trans         &trans            &trans           &trans           &mohold 3 SPACE  &kp LEFT_SHIFT
             >;
         };
 
@@ -110,15 +110,6 @@
 &trans          &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LG(LS(NUMBER_4))    &kp LEFT  &kp DOWN              &kp UP                &kp RIGHT      &trans  &trans
 &trans          &trans          &trans            &bt BT_SEL 0  &bt BT_SEL 1      &kp LG(SQT)             &kp TAB   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans         &trans  &trans
                                                   &trans        &kp LEFT_SHIFT    &trans                  &trans    &trans                &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
