@@ -92,9 +92,9 @@
 
         math {
             bindings = <
-&trans  &kp N1     &kp N2            &kp N3         &kp N4            &kp N5           &kp N6           &kp N7           &kp N8          &kp N9          &kp N0         &trans
-&trans  &kp TILDE  &kp BACKSLASH     &kp PIPE       &kp CARET         &kp AMPERSAND    &kp KP_ASTERISK  &kp KP_PLUS      &kp KP_EQUAL    &kp BACKSPACE   &kp SEMICOLON  &trans
-&trans  &trans     &kp LEFT_COMMAND  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE        &kp KP_SLASH     &kp KP_MINUS     &kp COMMA       &kp UNDERSCORE  &trans         &trans
+&trans  &kp N1     &kp N2            &kp N3         &kp N4            &kp N5           &kp N6           &kp N7           &kp N8          &kp N9         &kp N0          &trans
+&trans  &kp TILDE  &kp BACKSLASH     &kp PIPE       &kp CARET         &kp AMPERSAND    &kp KP_ASTERISK  &kp KP_PLUS      &kp KP_EQUAL    &kp BACKSPACE  &kp UNDERSCORE  &trans
+&trans  &trans     &kp LEFT_COMMAND  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE        &kp KP_SLASH     &kp KP_MINUS     &kp COMMA       &kp PERIOD     &trans          &trans
                                      &trans         &trans            &trans           &trans           &mohold 3 SPACE  &kp LEFT_SHIFT
             >;
         };
