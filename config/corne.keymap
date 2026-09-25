@@ -22,7 +22,7 @@
         layer2cmd: layer2cmd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &mo 2>;
+            bindings = <&kp LGUI &mo 3>;
             label = "LAYER2CMD";
         };
     };
@@ -76,8 +76,18 @@
             bindings = <
 &kp LEFT_CONTROL  &kp Q  &kp W  &kp E  &kp R     &kp T    &kp Y     &kp U      &kp I          &kp O       &kp P     &kp APOS
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D  &kp F     &kp G    &kp H     &kp J      &kp K          &kp L       &kp SEMI  &kp ENTER
-&trans            &kp Z  &kp X  &kp C  &kp V     &kp B    &kp N     &kp M      &kp COMMA      &kp PERIOD  &kp FSLH  &trans
-                                &mo 2  &kp LGUI  &mo 1    &kp RALT  &kp SPACE  &kp RIGHT_GUI
+&tog 1            &kp Z  &kp X  &kp C  &kp V     &kp B    &kp N     &kp M      &kp COMMA      &kp PERIOD  &kp FSLH  &trans
+                                &mo 3  &kp LGUI  &mo 2    &kp RALT  &kp SPACE  &kp RIGHT_GUI
+            >;
+        };
+
+        colemak_dh {
+            display-name = "Colemak-DH";
+            bindings = <
+&trans  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U      &kp Y       &kp SEMI  &trans
+&trans  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N  &kp E      &kp I       &kp O     &trans
+&trans  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &kp COMMA  &kp PERIOD  &kp FSLH  &trans
+                      &trans &trans &trans   &trans &trans &trans
             >;
         };
 
@@ -95,7 +105,7 @@
 &trans  &kp N1     &kp N2            &kp N3         &kp N4            &kp N5           &kp N6           &kp N7           &kp N8          &kp N9         &kp N0          &trans
 &trans  &kp TILDE  &kp BACKSLASH     &kp PIPE       &kp CARET         &kp AMPERSAND    &kp KP_ASTERISK  &kp KP_PLUS      &kp KP_EQUAL    &kp BACKSPACE  &kp UNDERSCORE  &trans
 &trans  &trans     &kp LEFT_COMMAND  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE        &kp KP_SLASH     &kp KP_MINUS     &kp COMMA       &kp PERIOD     &trans          &trans
-                                     &trans         &trans            &trans           &trans           &mohold 3 SPACE  &kp LEFT_SHIFT
+                                     &trans         &trans            &trans           &trans           &mohold 4 SPACE  &kp LEFT_SHIFT
             >;
         };
 
