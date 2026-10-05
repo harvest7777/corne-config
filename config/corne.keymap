@@ -13,15 +13,6 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        mouseless {
-            bindings = <&mouseless_grid>;
-            key-positions = <38 39>;
-        };
-    };
-
     macros {
         layer2cmd: layer2cmd {
             compatible = "zmk,behavior-macro";
