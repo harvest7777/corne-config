@@ -66,6 +66,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&mo>, <&sk>;
+
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
@@ -77,37 +78,37 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&trans      &kp Q  &kp W  &kp F           &kp P     &kp B  &kp J         &kp L      &kp U      &kp Y                 &kp APOS  &trans
-&kp ESCAPE  &kp A  &kp R  &kp S           &kp T     &kp G  &kp M         &kp N      &kp E      &kp I                 &kp O     &kp ENTER
-&trans      &kp Z  &kp X  &kp C           &kp D     &kp V  &kp K         &kp H      &kp COMMA  &kp_tap LCTRL PERIOD  &kp FSLH  &sk RGUI
-                          &sk LEFT_SHIFT  &sk LGUI  &mo 1  &mosk 3 RALT  &kp SPACE  &mo 2
+&trans      &kp Q  &kp W  &kp F           &kp P     &kp B    &kp J         &kp L      &kp U      &kp Y                 &kp APOS  &trans
+&kp ESCAPE  &kp A  &kp R  &kp S           &kp T     &kp G    &kp M         &kp N      &kp E      &kp I                 &kp O     &kp ENTER
+&trans      &kp Z  &kp X  &kp C           &kp D     &kp V    &kp K         &kp H      &kp COMMA  &kp_tap LCTRL PERIOD  &kp FSLH  &sk RGUI
+                          &sk LEFT_SHIFT  &sk LGUI  &mo 1    &mosk 3 RALT  &kp SPACE  &mo 2
             >;
         };
 
         coding {
             bindings = <
-&trans  &trans  &trans            &trans        &trans            &trans           &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
-&trans  &trans  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp EXCLAMATION  &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
-&trans  &trans  &trans            &kp COLON     &kp SEMICOLON     &kp LC(B)        &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
-                                  &trans        &trans            &trans           &trans        &kp SPACE             &trans
+&trans  &trans  &trans            &trans        &trans            &trans             &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
+&trans  &trans  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp EXCLAMATION    &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
+&trans  &trans  &trans            &kp COLON     &kp SEMICOLON     &kp LC(B)          &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
+                                  &trans        &trans            &trans             &trans        &kp SPACE             &trans
             >;
         };
 
         math {
             bindings = <
-&trans  &trans  &kp N7        &kp N8        &kp N9        &trans  &kp GRAVE        &kp BACKSLASH  &trans        &trans      &trans  &trans
-&trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &kp KP_ASTERISK  &kp KP_PLUS    &kp KP_EQUAL  &kp UNDER   &trans  &trans
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp KP_SLASH     &kp KP_MINUS   &kp COMMA     &kp PERIOD  &trans  &trans
-                              &trans        &kp N0        &trans  &trans           &trans         &trans
+&trans  &trans  &kp N7        &kp N8        &kp N9        &trans       &kp GRAVE        &kp BACKSLASH  &trans        &trans         &trans          &trans
+&trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans       &kp KP_ASTERISK  &kp KP_PLUS    &kp KP_EQUAL  &kp BACKSPACE  &kp UNDERSCORE  &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans       &kp KP_SLASH     &kp KP_MINUS   &kp COMMA     &kp PERIOD     &trans          &trans
+                              &trans        &kp N0        &kp SPACE    &trans           &trans         &trans
             >;
         };
 
         controls {
             bindings = <
-&bt BT_CLR_ALL  &trans  &trans            &kp C_PREV    &kp C_NEXT        &kp LG(LS(NUMBER_3))  &kp C_PP  &kp C_VOL_DN          &kp C_VOLUME_UP       &kp BACKSPACE  &trans  &trans
-&trans          &trans  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp LG(LS(NUMBER_4))  &kp LEFT  &kp DOWN              &kp UP                &kp RIGHT      &trans  &trans
-&trans          &trans  &trans            &bt BT_SEL 0  &bt BT_SEL 1      &kp LG(SQT)           &kp TAB   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans         &trans  &trans
-                                          &trans        &trans            &trans                &trans    &trans                &trans
+&bt BT_CLR_ALL  &trans  &trans            &kp C_PREV    &kp C_NEXT        &kp LG(LS(NUMBER_3))    &kp C_PP  &kp C_VOL_DN          &kp C_VOLUME_UP       &kp BACKSPACE  &trans  &trans
+&trans          &trans  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp LG(LS(NUMBER_4))    &kp LEFT  &kp DOWN              &kp UP                &kp RIGHT      &trans  &trans
+&trans          &trans  &trans            &bt BT_SEL 0  &bt BT_SEL 1      &kp LG(SQT)             &kp TAB   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans         &trans  &trans
+                                          &trans        &trans            &trans                  &trans    &trans                &trans
             >;
         };
     };
