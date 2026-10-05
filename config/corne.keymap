@@ -37,11 +37,11 @@
             label = "MOUSELESS_ON";
         };
 
-        mouseless_off: mouseless_off {
+        mouseless_free: mouseless_free {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F14 &tog 4>;
-            label = "MOUSELESS_OFF";
+            label = "MOUSELESS_FREE";
         };
     };
 
@@ -96,10 +96,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&trans   &kp Q  &kp W  &kp F           &kp P     &kp B    &kp J         &kp L      &kp U      &kp Y                 &kp APOS  &trans
-&kp F14  &kp A  &kp R  &kp S           &kp T     &kp G    &kp M         &kp N      &kp E      &kp I                 &kp O     &kp ENTER
-&trans   &kp Z  &kp X  &kp C           &kp D     &kp V    &kp K         &kp H      &kp COMMA  &kp_tap LCTRL PERIOD  &kp FSLH  &sk RGUI
-                       &sk LEFT_SHIFT  &sk LGUI  &mo 1    &mosk 3 RALT  &kp SPACE  &mo 2
+&trans           &kp Q  &kp W  &kp F           &kp P     &kp B  &kp J         &kp L      &kp U      &kp Y                 &kp APOS  &trans
+&mouseless_free  &kp A  &kp R  &kp S           &kp T     &kp G  &kp M         &kp N      &kp E      &kp I                 &kp O     &kp ENTER
+&trans           &kp Z  &kp X  &kp C           &kp D     &kp V  &kp K         &kp H      &kp COMMA  &kp_tap LCTRL PERIOD  &kp FSLH  &sk RGUI
+                               &sk LEFT_SHIFT  &sk LGUI  &mo 1  &mosk 3 RALT  &kp SPACE  &mo 2
             >;
         };
 
@@ -133,10 +133,10 @@
         mouseless {
             display-name = "Mouseless";
             bindings = <
-&trans          &trans  &trans   &kp F15  &trans   &trans  &trans   &trans   &trans     &trans      &trans  &trans
-&mouseless_off  &trans  &kp F16  &kp F17  &kp F18  &trans  &trans   &kp F19  &kp F20    &trans      &trans  &trans
-&trans          &trans  &trans   &trans   &trans   &trans  &kp K    &kp H    &kp COMMA  &kp PERIOD  &trans  &trans
-                                 &kp F19  &kp F20  &trans  &kp F21  &trans   &kp F22
+&trans  &trans  &trans   &kp F15  &trans   &trans  &trans   &trans   &trans     &trans      &trans  &trans
+&trans  &trans  &kp F16  &kp F17  &kp F18  &trans  &trans   &kp F19  &kp F20    &trans      &trans  &trans
+&trans  &trans  &trans   &trans   &trans   &trans  &kp K    &kp H    &kp COMMA  &kp PERIOD  &trans  &trans
+                         &kp F19  &kp F20  &trans  &kp F21  &trans   &kp F22
             >;
         };
     };
