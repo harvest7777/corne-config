@@ -133,10 +133,10 @@
         mouseless {
             display-name = "Mouseless";
             bindings = <
-&none           &none  &none    &kp F15  &none    &none  &none    &none    &none      &none       &none  &none
-&mouseless_off  &none  &kp F16  &kp F17  &kp F18  &none  &none    &kp F19  &kp F20    &none       &none  &none
-&none           &none  &none    &none    &none    &none  &kp K    &kp H    &kp COMMA  &kp PERIOD  &none  &none
-                                &kp F19  &kp F20  &none  &kp F21  &none    &kp F22
+&trans          &trans  &trans   &kp F15  &trans   &trans  &trans   &trans   &trans     &trans      &trans  &trans
+&mouseless_off  &trans  &kp F16  &kp F17  &kp F18  &trans  &trans   &kp F19  &kp F20    &trans      &trans  &trans
+&trans          &trans  &trans   &trans   &trans   &trans  &kp K    &kp H    &kp COMMA  &kp PERIOD  &trans  &trans
+                                 &kp F19  &kp F20  &trans  &kp F21  &trans   &kp F22
             >;
         };
     };
