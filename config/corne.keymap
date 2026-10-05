@@ -40,7 +40,7 @@
         mouseless_grid: mouseless_grid {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13 &to 4>;
+            bindings = <&kp F13 &to 0>;
             label = "MOUSELESS_GRID";
         };
 
