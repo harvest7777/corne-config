@@ -127,7 +127,7 @@
             display-name = "Mouseless";
             bindings = <
 &trans  &trans  &trans  &trans   &trans   &trans  &trans   &trans   &trans     &trans      &trans  &trans
-&trans  &trans  &trans  &trans   &trans   &trans  &trans   &kp F19  &kp F20    &trans      &trans  &trans
+&trans  &trans  &trans  &trans   &trans   &trans  &trans   &kp F20  &kp F19    &trans      &trans  &trans
 &trans  &trans  &trans  &trans   &trans   &trans  &kp K    &kp H    &kp COMMA  &kp PERIOD  &trans  &trans
                         &kp F19  &kp F20  &trans  &kp F15  &trans   &kp F16
             >;
