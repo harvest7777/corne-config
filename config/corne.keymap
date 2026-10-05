@@ -33,7 +33,7 @@
         mouseless_on: mouseless_on {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13 &tog 4>;
+            bindings = <&kp F23 &tog 4>;
             label = "MOUSELESS_ON";
         };
 
