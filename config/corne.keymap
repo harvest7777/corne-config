@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         mouseless {
-            bindings = <&kp F13>;
+            bindings = <&mouseless_grid>;
             key-positions = <38 39>;
         };
     };
@@ -33,8 +33,22 @@
         mouseless_free: mouseless_free {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F14 &tog 4>;
+            bindings = <&kp F14 &to 4>;
             label = "MOUSELESS_FREE";
+        };
+
+        mouseless_grid: mouseless_grid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F13 &to 4>;
+            label = "MOUSELESS_GRID";
+        };
+
+        mouseless_exit: mouseless_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &to 0>;
+            label = "MOUSELESS_EXIT";
         };
     };
 
@@ -89,7 +103,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp F13          &kp Q  &kp W  &kp F           &kp P     &kp B  &kp J         &kp L      &kp U      &kp Y                 &kp APOS  &trans
+&mouseless_grid  &kp Q  &kp W  &kp F           &kp P     &kp B  &kp J         &kp L      &kp U      &kp Y                 &kp APOS  &trans
 &mouseless_free  &kp A  &kp R  &kp S           &kp T     &kp G  &kp M         &kp N      &kp E      &kp I                 &kp O     &kp ENTER
 &trans           &kp Z  &kp X  &kp C           &kp D     &kp V  &kp K         &kp H      &kp COMMA  &kp_tap LCTRL PERIOD  &kp FSLH  &sk RGUI
                                &sk LEFT_SHIFT  &sk LGUI  &mo 1  &mosk 3 RALT  &kp SPACE  &mo 2
@@ -126,10 +140,10 @@
         mouseless {
             display-name = "Mouseless";
             bindings = <
-&trans  &trans  &trans  &trans   &trans   &trans  &trans   &trans   &trans     &trans      &trans  &trans
-&trans  &trans  &trans  &trans   &trans   &trans  &trans   &kp F20  &kp F19    &trans      &trans  &trans
-&trans  &trans  &trans  &trans   &trans   &trans  &kp K    &kp H    &kp COMMA  &kp PERIOD  &trans  &trans
-                        &kp F19  &kp F20  &trans  &kp F15  &trans   &kp F16
+&trans           &trans  &trans  &trans   &trans   &trans  &trans   &trans   &trans     &trans      &trans  &trans
+&mouseless_exit  &trans  &trans  &trans   &trans   &trans  &trans   &kp F20  &kp F19    &trans      &trans  &trans
+&trans           &trans  &trans  &trans   &trans   &trans  &kp K    &kp H    &kp COMMA  &kp PERIOD  &trans  &trans
+                                 &kp F19  &kp F20  &trans  &kp F15  &trans   &kp F16
             >;
         };
     };
