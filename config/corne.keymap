@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         mouseless {
-            bindings = <&kp F23>;
+            bindings = <&kp F13>;
             key-positions = <38 39>;
         };
     };
