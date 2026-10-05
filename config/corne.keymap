@@ -8,10 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&sk {
-    quick-release;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -72,25 +68,25 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&trans  &kp Q  &kp W  &kp F           &kp P     &kp B  &kp J  &kp L      &kp U      &kp Y                 &kp APOS  &trans
-&trans  &kp A  &kp R  &kp S           &kp T     &kp G  &kp M  &kp N      &kp E      &kp I                 &kp O     &kp ENTER
-&trans  &kp Z  &kp X  &kp C           &kp D     &kp V  &kp K  &kp H      &kp COMMA  &kp_tap LCTRL PERIOD  &kp FSLH  &sk RGUI
-                      &sk LEFT_SHIFT  &kp LGUI  &mo 1  &mo 3  &kp SPACE  &mo 2
+&trans  &kp Q  &kp W  &kp F           &kp P     &kp B    &kp J  &kp L      &kp U      &kp Y                 &kp APOS  &trans
+&trans  &kp A  &kp R  &kp S           &kp T     &kp G    &kp M  &kp N      &kp E      &kp I                 &kp O     &kp ENTER
+&trans  &kp Z  &kp X  &kp C           &kp D     &kp V    &kp K  &kp H      &kp COMMA  &kp_tap LCTRL PERIOD  &kp FSLH  &sk RGUI
+                      &sk LEFT_SHIFT  &kp LGUI  &mo 1    &mo 3  &kp SPACE  &mo 2
             >;
         };
 
         coding {
             bindings = <
-&trans  &trans  &trans            &kp COLON     &kp SEMI          &trans     &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
-&trans  &trans  &kp LEFT_CONTROL  &sk LEFT_ALT  &kp LEFT_COMMAND  &trans     &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
-&trans  &trans  &trans            &trans        &trans            &kp LC(B)  &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
-                                  &trans        &trans            &trans     &trans        &kp SPACE             &trans
+&trans  &trans  &trans            &trans        &trans            &trans             &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
+&trans  &trans  &kp LEFT_CONTROL  &sk LEFT_ALT  &kp LEFT_COMMAND  &kp EXCLAMATION    &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
+&trans  &trans  &trans            &kp COLON     &kp SEMICOLON     &kp LC(B)          &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
+                                  &trans        &trans            &trans             &trans        &kp SPACE             &trans
             >;
         };
 
         math {
             bindings = <
-&trans  &trans  &kp N7        &kp N8        &kp N4        &trans    &kp GRAVE        &kp BACKSLASH  &trans        &trans      &trans  &trans
+&trans  &trans  &kp N7        &kp N8        &kp N9        &trans    &kp GRAVE        &kp BACKSLASH  &trans        &trans      &trans  &trans
 &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans    &kp KP_ASTERISK  &kp KP_PLUS    &kp KP_EQUAL  &kp UNDER   &trans  &trans
 &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &kp KP_SLASH     &kp KP_MINUS   &kp COMMA     &kp PERIOD  &trans  &trans
                               &trans        &kp N0        &trans    &trans           &trans         &trans
