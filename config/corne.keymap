@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         mouseless {
-            bindings = <&kp F13>;
+            bindings = <&mouseless_on>;
             key-positions = <38 39>;
         };
     };
@@ -28,6 +28,13 @@
             #binding-cells = <0>;
             bindings = <&kp LGUI &mo 2>;
             label = "LAYER2CMD";
+        };
+
+        mouseless_on: mouseless_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F13 &tog 4>;
+            label = "MOUSELESS_ON";
         };
     };
 
@@ -113,6 +120,16 @@
 &trans          &trans  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp LG(LS(NUMBER_4))    &kp LEFT  &kp DOWN              &kp UP                &kp RIGHT      &trans  &trans
 &trans          &trans  &trans            &bt BT_SEL 0  &bt BT_SEL 1      &kp LG(SQT)             &kp TAB   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans         &trans  &trans
                                           &trans        &trans            &trans                  &trans    &trans                &trans
+            >;
+        };
+
+        mouseless {
+            display-name = "Mouseless";
+            bindings = <
+&trans  &trans  &trans   &kp F15  &trans   &trans  &trans   &trans   &trans   &trans   &trans  &trans
+&trans  &trans  &kp F16  &kp F17  &kp F18  &trans  &trans   &kp F19  &kp F20  &trans   &trans  &trans
+&trans  &trans  &trans   &trans   &trans   &trans  &kp F21  &kp F22  &kp F23  &kp F24  &trans  &trans
+                         &kp F19  &kp F20  &trans  &trans   &trans   &trans
             >;
         };
     };
