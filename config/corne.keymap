@@ -80,10 +80,10 @@
 
         coding {
             bindings = <
-&trans  &trans  &kp TILDE    &kp POUND     &kp STAR    &kp EXCLAMATION    &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
-&trans  &trans  &kp PERCENT  &sk LEFT_ALT  &sk LGUI    &kp LC(O)          &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
-&trans  &trans  &kp AT_SIGN  &kp CARET     &kp DOLLAR  &kp LC(B)          &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
-                             &trans        &trans      &trans             &trans        &kp SPACE             &trans
+&trans  &trans     &kp TILDE    &kp POUND     &kp STAR    &kp EXCLAMATION    &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
+&trans  &kp LC(I)  &kp PERCENT  &sk LEFT_ALT  &sk LGUI    &kp LC(O)          &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
+&trans  &trans     &kp AT_SIGN  &kp CARET     &kp DOLLAR  &kp LC(B)          &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
+                                &trans        &trans      &trans             &trans        &kp SPACE             &trans
             >;
         };
 
