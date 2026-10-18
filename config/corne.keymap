@@ -63,6 +63,17 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
+
+        kp_sk: kp_sk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KP_SK";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            bindings = <&sk>, <&kp>;
+        };
     };
 
     keymap {
@@ -71,19 +82,19 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp F13    &kp Q  &kp W  &kp F           &kp P     &kp B    &kp J         &kp L      &kp U      &kp Y                 &kp APOS       &kp KP_SUBTRACT
-&kp F14    &kp A  &kp R  &kp S           &kp T     &kp G    &kp M         &kp N      &kp E      &kp I                 &kp O          &kp ENTER
-&sk LCTRL  &kp Z  &kp X  &kp C           &kp D     &kp V    &kp K         &kp H      &kp COMMA  &kp_tap LCTRL PERIOD  &kp SEMICOLON  &sk RGUI
+&kp F13    &kp Q  &kp W  &kp F           &kp P     &kp B    &kp J         &kp L      &kp U      &kp Y                &kp APOS       &kp KP_SUBTRACT
+&kp F14    &kp A  &kp R  &kp S           &kp T     &kp G    &kp M         &kp N      &kp E      &kp I                &kp O          &kp ENTER
+&kp UNDER  &kp Z  &kp X  &kp C           &kp D     &kp V    &kp K         &kp H      &kp COMMA  &kp_sk LCTRL PERIOD  &kp SEMICOLON  &sk RGUI
                          &sk LEFT_SHIFT  &sk LGUI  &mo 1    &mosk 3 RALT  &kp SPACE  &mo 2
             >;
         };
 
         coding {
             bindings = <
-&trans  &trans     &kp TILDE    &kp POUND     &kp STAR    &kp EXCLAMATION    &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
-&trans  &kp LC(I)  &kp PERCENT  &sk LEFT_ALT  &sk LGUI    &kp LC(O)          &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
-&trans  &trans     &kp AT_SIGN  &kp CARET     &kp DOLLAR  &kp LC(B)          &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
-                                &trans        &trans      &trans             &trans        &kp SPACE             &trans
+&trans  &trans     &kp TILDE    &kp POUND     &kp STAR    &kp EXCLAMATION    &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_DIVIDE  &trans  &trans
+&trans  &kp LC(I)  &kp PERCENT  &sk LEFT_ALT  &sk LGUI    &kp LC(O)          &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE  &trans  &trans
+&trans  &trans     &kp AT_SIGN  &kp CARET     &kp DOLLAR  &kp LC(B)          &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &trans  &trans
+                                &trans        &trans      &trans             &trans        &trans                &trans
             >;
         };
 
