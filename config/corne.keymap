@@ -91,19 +91,19 @@
 
         math {
             bindings = <
-&trans  &kp TILDE  &kp BACKSLASH  &kp PIPE  &kp KP_DIVIDE  &kp GRAVE  &trans  &kp MINUS  &kp EQUAL  &trans      &trans  &trans
-&trans  &kp N1     &kp N2         &kp N3    &kp N4         &kp N5     &kp N6  &kp N7     &kp N8     &kp N9      &kp N0  &trans
-&trans  &trans     &trans         &trans    &kp SPACE      &trans     &trans  &trans     &kp COMMA  &kp PERIOD  &trans  &trans
-                                  &trans    &trans         &trans     &trans  &trans     &trans
+&trans  &kp TILDE  &kp BACKSLASH  &kp PIPE  &kp KP_DIVIDE  &kp GRAVE    &trans  &kp MINUS  &kp EQUAL  &trans      &trans  &trans
+&trans  &kp N1     &kp N2         &kp N3    &kp N4         &kp N5       &kp N6  &kp N7     &kp N8     &kp N9      &kp N0  &trans
+&trans  &trans     &trans         &trans    &trans         &trans       &trans  &trans     &kp COMMA  &kp PERIOD  &trans  &trans
+                                  &trans    &kp SPACE      &trans       &trans  &trans     &trans
             >;
         };
 
         coding {
             bindings = <
-&trans  &trans     &trans  &trans        &trans    &trans     &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
-&trans  &kp LC(I)  &trans  &sk LEFT_ALT  &sk LGUI  &kp LC(O)  &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
-&trans  &trans     &trans  &trans        &trans    &kp LC(B)  &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
-                           &trans        &trans    &trans     &trans        &trans                &trans
+&trans  &trans     &trans  &trans        &trans    &trans       &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
+&trans  &kp LC(I)  &trans  &sk LEFT_ALT  &sk LGUI  &kp LC(O)    &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
+&trans  &trans     &trans  &trans        &trans    &kp LC(B)    &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
+                           &trans        &trans    &trans       &trans        &trans                &trans
             >;
         };
 
