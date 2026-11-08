@@ -15,7 +15,7 @@
         layer2cmd: layer2cmd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &mo 2>;
+            bindings = <&kp LGUI &mo 1>;
             label = "LAYER2CMD";
         };
     };
@@ -85,16 +85,7 @@
 &kp F13        &kp Q  &kp W  &kp F           &kp P     &kp B    &kp J         &kp L      &kp U      &kp Y       &kp APOS       &sk LCTRL
 &kp F14        &kp A  &kp R  &kp S           &kp T     &kp G    &kp M         &kp N      &kp E      &kp I       &kp O          &kp ENTER
 &kp RA(SPACE)  &kp Z  &kp X  &kp C           &kp D     &kp V    &kp K         &kp H      &kp COMMA  &kp PERIOD  &kp SEMICOLON  &sk RGUI
-                             &sk LEFT_SHIFT  &sk LGUI  &mo 1    &mosk 3 RALT  &kp SPACE  &mo 2
-            >;
-        };
-
-        coding {
-            bindings = <
-&trans  &trans     &trans       &kp POUND     &kp STAR    &kp EXCLAMATION    &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
-&trans  &kp LC(I)  &kp PERCENT  &sk LEFT_ALT  &sk LGUI    &kp LC(O)          &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
-&trans  &trans     &kp AT_SIGN  &kp CARET     &kp DOLLAR  &kp LC(B)          &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
-                                &trans        &trans      &trans             &trans        &trans                &trans
+                             &sk LEFT_SHIFT  &sk LGUI  &mo 2    &mosk 3 RALT  &kp SPACE  &mo 1
             >;
         };
 
@@ -104,6 +95,15 @@
 &trans  &kp TILDE  &kp BACKSLASH  &kp PIPE        &kp KP_DIVIDE  &kp GRAVE    &kp KP_ASTERISK  &kp KP_PLUS   &kp KP_EQUAL  &kp BACKSPACE  &trans  &trans
 &trans  &trans     &trans         &kp UNDERSCORE  &kp MINUS      &trans       &kp KP_SLASH     &kp KP_MINUS  &kp COMMA     &kp PERIOD     &trans  &trans
                                   &trans          &trans         &trans       &trans           &trans        &trans
+            >;
+        };
+
+        coding {
+            bindings = <
+&trans  &trans     &trans       &kp POUND     &kp STAR    &kp EXCLAMATION    &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &trans  &trans
+&trans  &kp LC(I)  &kp PERCENT  &sk LEFT_ALT  &sk LGUI    &kp LC(O)          &kp ESCAPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSPACE      &trans  &trans
+&trans  &trans     &kp AT_SIGN  &kp CARET     &kp DOLLAR  &kp LC(B)          &kp TAB       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(BACKSPACE)  &trans  &trans
+                                &trans        &trans      &trans             &trans        &trans                &trans
             >;
         };
 
